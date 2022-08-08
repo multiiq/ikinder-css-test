@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="scss/bootstrap/scss/bootstrap.css">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="scss/bootstrap.css">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <div class="d-flex">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse" >
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item active">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            
+        </div>
+        <div class="me-5">
+            <a href="">로그인</a>
+            <a href="" class="ms-3">회원가입</a>
+        </div>
+    </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Our Team</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Team</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+ 
+
+   <!--기관정보 입력-->
+   <div id="form-2" class="row g-4 display-none">
+                
+                
+    <div class="col-lg-12 col-md-12 " data-wow-delay="0.5s">
+        <form>
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center mb-5">
+                      <button type="button" class="col-sm-6 btn btn-dark py-3 px-5 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">기관 찾기</button>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="ins_name"  readonly>
+                        <label for="ins_name">기관명</label>
+                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-2" id="ins_addr" readonly>
+                        <label for="ins_addr">기관주소</label>
+                    </div>
+                   
+                    
+                </div>
+            
+                
+               
+            </div>
+        </form>
+    </div>
+</div>
+<!--기관정보 끝-->
+
+<!--기관 모달창-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">기관 검색</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="tab-2" class="tab-content row g-4">
+                <div  class="col-lg-2">
+                    <select class="form-select" id="sidoList" class="combineSidoList" name="combineSidoCode" onchange="citySelect(this.value,1);" title="시/도">
+                        <option value="">전체 시/도</option>
+                        <option value="11">서울특별시</option>
+                        <option value="26">부산광역시</option>
+                        <option value="27">대구광역시</option>
+                        <option value="28">인천광역시</option>
+                        <option value="29">광주광역시</option>
+                        <option value="30">대전광역시</option>
+                        <option value="31">울산광역시</option>
+                        <option value="36">세종특별자치시</option>
+                        <option value="41">경기도</option>
+                        <option value="42">강원도</option>
+                        <option value="43">충청북도</option>
+                        <option value="44">충청남도</option>
+                        <option value="45">전라북도</option>
+                        <option value="46">전라남도</option>
+                        <option value="47">경상북도</option>
+                        <option value="48">경상남도</option>
+                        <option value="50">제주특별자치도</option>
+                    </select>
+                    <p id="sido-msg" class="mt-1 text-danger ms-2" style="display: none;">시/도를 선택해주세요</p>
+                </div>
+                <div class="col-lg-2">
+                    <select class="form-select me-2" id="city" class="px-3 py-2 me-3"  name="city" ><option value="">전체</option></select>
+                    <p id="city-msg" class="mt-1 text-danger ms-2" style="display: none;">지역을 선택해주세요</p>
+                </div>
+                <div class="col-lg-5">
+                    <input type="text"  class="form-control" name="stx2" id="schoolName" placeholder="기관명" onkeyup="enterkey('childschool')">
+                    <p id="search-msg" class="mt-1 text-danger ms-2" style="display: none;">검색어를 입력해주세요</p>
+                </div>
+                <div class="col-lg-3">
+                   <button id="searchBtn" class="btn btn-secondary ms-4" style="width: 10rem;">검색</button>
+                   <p class="mt-1"></p>
+                </div>
+            </div>
+           
+
+
+            <div>
+                <table class="table table-hover text-center mt-5">
+                    <thead class="table-light">
+                        <tr>
+                            <th><input type="checkbox" onclick="selectAll(this)"></th>
+                            <th>기관명</th>
+                            <th>주소</th>
+                            
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                            <td><input type="checkbox" name="notice"></td>
+                            <td>100</td>
+                            <td>아이킨더 공지사항입니다</td>
+                            
+                         </tr>
+                         <tr>
+                            <td><input type="checkbox" name="notice"></td>
+                            <td>100</td>
+                            <td>아이킨더 공지사항입니다</td>
+                            
+                         </tr>
+                      </tbody>
+
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+         
+          <button type="button" class="btn btn-primary">등록</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--기관 모달창 끝-->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script>
+     //시도 select
+     const getCity=()=>{
+        const obj ={
+            "11":{
+                'cityName':[
+                    '중구',
+                    '영등포구',
+                    '중랑구',
+                    '은평구',
+                    '금천구',
+                    '동작구',
+                    '강남구',
+                    '종로구',
+                    '용산구',
+                    '광진구',
+                    '양천구',
+                    '관악구',
+                    '서대문구',
+                    '마포구',
+                    '성동구',
+                    '강북구',
+                    '서초구', 
+                    '송파구',
+                    '강동구',
+                    '성북구',
+                    '도봉구',
+                    '노원구',
+                    '강서구',
+                    '구로구',
+                    '동대문구'],
+                 'cityCode':[
+                    '11140',
+                    '11560',
+                    '11260',
+                    '11380',
+                    '11545',
+                    '11590',
+                    '11680',
+                    '11110',
+                    '11170',
+                    '11215',
+                    '11470',
+                    '11620',
+                    '11410',
+                    '11440',
+                    '11200',
+                    '11305',
+                    '11650',
+                    '11710',
+                    '11740',
+                    '11290',
+                    '11320',
+                    '11350',
+                    '11500',
+                    '11530',
+                    '11230']
+
+            },
+            "26":{
+                'cityName':[
+                    '부산진구',
+                    '사상구',
+                    '서구',
+                    '연제구',
+                    '사하구',
+                    '강서구',
+                    '중구',
+                    '동래구',
+                    '수영구',
+                    '동구',
+                    '금정구',
+                    '남구',
+                    '영도구',
+                    '해운대구',
+                    '기장군',
+                    '북구'
+                ],
+                'cityCode':[
+                    '26230',
+                    '26530',
+                    '26140',
+                    '26470',
+                    '26380',
+                    '26440',
+                    '26110',
+                    '26260',
+                    '26500',
+                    '26170',
+                    '26410',
+                    '26290',
+                    '26200',
+                    '26350',
+                    '26710',
+                    '26320'
+                ]
+            },
+            "27":{
+                'cityName':[
+                    '달성군',
+                    '남구',
+                    '서구',
+                    '달서구',
+                    '수성구',
+                    '중구',
+                    '북구',
+                    '동구'
+                ],
+                'cityCode':[
+                    '27710',
+                    '27200',
+                    '27170',
+                    '27290',
+                    '27260',
+                    '27110',
+                    '27230',
+                    '27140'
+                ]
+            },
+            "28":{
+                'cityName':[
+                    '미추홀구',
+                    '강화군',
+                    '동구',
+                    '옹진군',
+                    '부평구',
+                    '남동구',
+                    '계양구',
+                    '서구',
+                    '연수구',
+                    '중구'
+                ],
+                'cityCode':[
+                    '28177',
+                    '28710',
+                    '28140',
+                    '28720',
+                    '28237',
+                    '28200',
+                    '28245',
+                    '28260',
+                    '28185',
+                    '28110'
+                ]
+            },
+            "29":{
+                'cityName':[
+                    '북구',
+                    '서구',
+                    '남구',
+                    '광산구',
+                    '동구'
+                ],
+                'cityCode':[
+                    '29170',
+                    '29140',
+                    '29155',
+                    '29200',
+                    '29110'
+                ]
+            },
+            "30":{
+                'cityName':[
+                    '대덕구',
+                    '동구',
+                    '서구',
+                    '중구',
+                    '유성구'
+                ],
+                'cityCode':[
+                    '30230',
+                    '30110',
+                    '30170',
+                    '30140',
+                    '30200'
+                ]
+            },
+            "31":{
+                'cityName':[
+                    '중구',
+                    '동구',
+                    '남구',
+                    '울주군',
+                    '북구'
+                ],
+                'cityCode':[
+                    '31110',
+                    '31170',
+                    '31140',
+                    '31710',
+                    '31200'
+                ]
+            },
+            "36":{
+                'cityName':[
+                  '세종특별자치시'
+                ],
+                 'cityCode':[
+                   '36110'
+                 ]
+            },
+            "41":{
+                'cityName':[
+                    '수원시 장안구',
+                    '파주시',
+                    '의정부시',
+                    '남양주시',
+                    '오산시',
+                    '시흥시',
+                    '용인시 처인구',
+                    '부천시',
+                    '부천시 소사구',
+                    '안성시',
+                    '화성시',
+                    '김포시',
+                    '여주시',
+                    '수원시 팔달구',
+                    '수원시 영통구',
+                    '안양시 동안구',
+                    '광명시',
+                    '평택시',
+                    '안산시 상록구',
+                    '안산시 단원구',
+                    '양주시',
+                    '연천군',
+                    '수원시',
+                    '동두천시',
+                    '용인시 기흥구',
+                    '포천시',
+                    '양평군',
+                    '안양시',
+                    '의왕시',
+                    '성남시',
+                    '성남시 수정구',
+                    '하남시',
+                    '광주시',
+                    '가평군',
+                    '수원시 권선구',
+                    '성남시 분당구',
+                    '고양시 일산서구',
+                    '과천시',
+                    '구리시',
+                    '군포시',
+                    '용인시 수지구',
+                    '이천시',
+                    '안양시 만안구',
+                    '고양시 덕양구',
+                    '고양시 일산동구',
+                    '성남시 중원구'
+                ],
+                'cityCode':[
+                    '41111',
+                    '41480',
+                    '41150',
+                    '41360',
+                    '41370',
+                    '41390',
+                    '41461',
+                    '41190',
+                    '41197',
+                    '41550',
+                    '41590',
+                    '41570',
+                    '41670',
+                    '41115',
+                    '41117',
+                    '41173',
+                    '41210',
+                    '41220',
+                    '41271',
+                    '41273',
+                    '41630',
+                    '41800',
+                    '41110',
+                    '41250',
+                    '41463',
+                    '41650',
+                    '41830',
+                    '41170',
+                    '41430',
+                    '41130',
+                    '41131',
+                    '41450',
+                    '41610',
+                    '41820',
+                    '41113',
+                    '41135',
+                    '41287',
+                    '41290',
+                    '41310',
+                    '41410',
+                    '41465',
+                    '41500',
+                    '41171',
+                    '41281',
+                    '41285',
+                    '41133'
+                ]
+            },
+            "42":{
+                'cityName':[
+                    '삼척시',
+                    '영월군',
+                    '고성군',
+                    '춘천시',
+                    '태백시',
+                    '양구군',
+                    '인제군',
+                    '양양군',
+                    '홍천군',
+                    '정선군',
+                    '강릉시',
+                    '동해시',
+                    '속초시',
+                    '횡성군',
+                    '평창군',
+                    '화천군',
+                    '원주시'
+                ],
+                'cityCode':[
+                    '42230',
+                    '42750',
+                    '42820',
+                    '42110',
+                    '42190',
+                    '42800',
+                    '42810',
+                    '42830',
+                    '42720',
+                    '42770',
+                    '42150',
+                    '42170',
+                    '42210',
+                    '42730',
+                    '42760',
+                    '42790',
+                    '42130',
+                    '42780'
+                ]
+            },
+            "43":{
+                'cityName':[
+                    '제천시',
+                    '괴산군',
+                    '보은군',
+                    '청주시 상당구',
+                    '청주시 청원구',
+                    '영동군',
+                    '청주시 흥덕구',
+                    '증평군',
+                    '음성군',
+                    '단양군',
+                    '충주시',
+                    '옥천군',
+                    '청주시 서원구',
+                    '진천군'
+                ],
+                'cityCode':[
+                    '43150',
+                    '43760',
+                    '43720',
+                    '43111',
+                    '43114',
+                    '43740',
+                    '43113',
+                    '43745',
+                    '43770',
+                    '43800',
+                    '43130',
+                    '43730',
+                    '43112',
+                    '43750'
+                ]
+            },
+            "44":{
+                'cityName':[
+                    '보령시',
+                    '홍성군',
+                    '천안시 동남구',
+                    '서산시',
+                    '논산시',
+                    '청양군',
+                    '아산시',
+                    '부여군',
+                    '천안시 서북구',
+                    '태안군',
+                    '계룡시',
+                    '당진시',
+                    '예산군',
+                    '공주시',
+                    '금산군',
+                    '서천군'
+                ],
+                'cityCode':[
+                    '44180',
+                    '44800',
+                    '44131',
+                    '44210',
+                    '44230',
+                    '44790',
+                    '44200',
+                    '44760',
+                    '44133',
+                    '44825',
+                    '44250',
+                    '44270',
+                    '44810',
+                    '44150',
+                    '44710',
+                    '44770'
+                ]
+            },
+            "45":{
+                'cityName':[
+                    '정읍시',
+                    '고창군',
+                    '임실군',
+                    '전주시 완산구',
+                    '군산시',
+                    '순창군',
+                    '부안군',
+                    '전주시 덕진구',
+                    '익산시',
+                    '완주군',
+                    '장수군',
+                    '진안군',
+                    '김제시',
+                    '남원시',
+                    '무주군'
+                ],
+                'cityCode':[
+                    '45180',
+                    '45790',
+                    '45750',
+                    '45111',
+                    '45130',
+                    '45770',
+                    '45800',
+                    '45113',
+                    '45140',
+                    '45710',
+                    '45740',
+                    '45720',
+                    '45210',
+                    '45190',
+                    '45730'
+                ]
+            },
+            "46":{
+                'cityName':[
+                    '목포시',
+                    '장성군',
+                    '완도군',
+                    '구례군',
+                    '여수시',
+                    '나주시',
+                    '화순군',
+                    '영광군',
+                    '담양군',
+                    '곡성군',
+                    '고흥군',
+                    '장흥군',
+                    '무안군',
+                    '보성군',
+                    '해남군',
+                    '광양시',
+                    '영암군',
+                    '신안군',
+                    '강진군',
+                    '진도군',
+                    '함평군',
+                    '순천시'
+                ],
+                'cityCode':[
+                    '46110',
+                    '46880',
+                    '46890',
+                    '46730',
+                    '46130',
+                    '46170',
+                    '46790',
+                    '46870',
+                    '46710',
+                    '46720',
+                    '46770',
+                    '46800',
+                    '46840',
+                    '46780',
+                    '46820',
+                    '46230',
+                    '46830',
+                    '46910',
+                    '46810',
+                    '46900',
+                    '46860',
+                    '46150'
+                ]
+            },
+            "47":{
+                'cityName':[
+                    '구미시',
+                    '성주군',
+                    '영덕군',
+                    '고령군',
+                    '칠곡군',
+                    '예천군',
+                    '울진군',
+                    '봉화군',
+                    '포항시 남구',
+                    '영주시',
+                    '경산시',
+                    '군위군',
+                    '청송군',
+                    '청도군',
+                    '울릉군',
+                    '경주시',
+                    '김천시',
+                    '안동시',
+                    '상주시',
+                    '문경시',
+                    '의성군',
+                    '영양군',
+                    '포항시',
+                    '영천시',
+                    '포항시 북구'
+                ],
+                'cityCode':[
+                    '47190',
+                    '47840',
+                    '47770',
+                    '47830',
+                    '47850',
+                    '47900',
+                    '47930',
+                    '47920',
+                    '47111',
+                    '47210',
+                    '47290',
+                    '47720',
+                    '47750',
+                    '47820',
+                    '47940',
+                    '47130',
+                    '47150',
+                    '47170',
+                    '47250',
+                    '47280',
+                    '47730',
+                    '47760',
+                    '47110',
+                    '47230',
+                    '47113'
+                ]
+
+            },
+            "48":{
+                'cityName':[
+                    '거제시',
+                    '양산시',
+                    '창녕군',
+                    '고성군',
+                    '함양군',
+                    '사천시',
+                    '의령군',
+                    '산청군',
+                    '합천군',
+                    '창원시 의창구',
+                    '통영시',
+                    '밀양시',
+                    '하동군',
+                    '거창군',
+                    '창원시',
+                    '창원시 마산회원구',
+                    '진주시',
+                    '함안군',
+                    '남해군',
+                    '창원시 성산구',
+                    '창원시 마산합포구',
+                    '창원시 진해구',
+                    '김해시'
+                ],
+                'cityCode':[
+                    '48310',
+                    '48330',
+                    '48740',
+                    '48820',
+                    '48870',
+                    '48240',
+                    '48720',
+                    '48860',
+                    '48890',
+                    '48121',
+                    '48220',
+                    '48270',
+                    '48850',
+                    '48880',
+                    '48120',
+                    '48127',
+                    '48170',
+                    '48730',
+                    '48840',
+                    '48123',
+                    '48125',
+                    '48129',
+                    '48250'
+                ]
+            },
+            "50":{
+                'cityName':[
+                    '서귀포시',
+                    '제주시'
+                ],
+                'cityCode':[
+                    '50130',
+                    '50110'
+                ]
+            }
+            
+
+        }
+        return obj;
+     }
+     //기관명 시도
+     const citySelect=(sidoCode,select)=>{
+        let arrType=getCity();
+        
+        //SELECT BOX 초기화
+		$("#city").find("option").remove().end().append("<option value=''>전체</option>");
+		//배열 개수 만큼 option 추가
+        if(sidoCode=="11"){
+            $.each(arrType['11']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['11']['cityCode'][i]+"'>"+arrType['11']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="26"){
+            $.each(arrType['26']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['26']['cityCode'][i]+"'>"+arrType['26']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="27"){
+            $.each(arrType['27']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['27']['cityCode'][i]+"'>"+arrType['27']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="28"){
+            $.each(arrType['28']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['28']['cityCode'][i]+"'>"+arrType['28']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="29"){
+            $.each(arrType['29']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['29']['cityCode'][i]+"'>"+arrType['29']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="30"){
+            $.each(arrType['30']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['30']['cityCode'][i]+"'>"+arrType['30']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="31"){
+            $.each(arrType['31']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['31']['cityCode'][i]+"'>"+arrType['31']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="36"){
+            $.each(arrType['36']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['36']['cityCode'][i]+"'>"+arrType['36']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="41"){
+            $.each(arrType['41']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['41']['cityCode'][i]+"'>"+arrType['41']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="42"){
+            $.each(arrType['42']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['42']['cityCode'][i]+"'>"+arrType['42']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="43"){
+            $.each(arrType['43']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['43']['cityCode'][i]+"'>"+arrType['43']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="44"){
+            $.each(arrType['44']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['44']['cityCode'][i]+"'>"+arrType['44']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="45"){
+            $.each(arrType['45']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['45']['cityCode'][i]+"'>"+arrType['45']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="46"){
+            $.each(arrType['46']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['46']['cityCode'][i]+"'>"+arrType['46']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="47"){
+            $.each(arrType['47']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['47']['cityCode'][i]+"'>"+arrType['47']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="48"){
+            $.each(arrType['48']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['48']['cityCode'][i]+"'>"+arrType['48']['cityName'][i]+"</option>")
+            });
+        }
+        else if(sidoCode=="50"){
+            $.each(arrType['50']['cityName'], function(i){
+                $("#city").append("<option value='"+arrType['50']['cityCode'][i]+"'>"+arrType['50']['cityName'][i]+"</option>")
+            });
+        }
+      
+
+    }
+
+
+    const searchBtn=document.querySelector("#searchBtn");
+
+    searchBtn.addEventListener("click",()=>{
+        
+        const selectSido=document.querySelector("#sidoList");
+        const selectCity = document.querySelector("#city");
+        const schoolName = document.querySelector("#schoolName");
+
+        const sidoVal = selectSido.options[selectSido.selectedIndex].value;
+        const cityVal = selectCity.options[selectCity.selectedIndex].value;
+        
+
+        const sidoMsg = document.querySelector("#sido-msg");
+        const cityMsg = document.querySelector("#city-msg");
+        const searchMsg = document.querySelector("#search-msg");
+
+
+        if(sidoVal==""&&cityVal==""){
+            sidoMsg.style.display="block";
+            cityMsg.style.display="block";
+            
+            
+        }else if(cityVal==""){
+            sidoMsg.style.display="none";
+            cityMsg.style.display="block";
+            searchMsg.style.display="none";
+
+        }else if(schoolName.value==""){
+            sidoMsg.style.display="none";
+            cityMsg.style.display="none";
+            searchMsg.style.display="block";
+        }
+
+
+       
+    })
+ </script>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
+                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

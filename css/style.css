@@ -45,6 +45,65 @@
     border-radius:65px;
 }
 
+@media (max-width:700px){
+    .sm-display-none{
+        display: none;
+    }
+}
+.menu-box{
+    border: 2px solid rgb(0 0 0 / 28%);
+    border-radius: 15px;
+    
+    padding:5rem 0;
+
+}
+.menu-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin:1.5rem 0
+}
+.sub-menu-list{
+    line-height: 2.2rem;
+    list-style: none;
+}
+.sub-menu-list li{
+    border-bottom: 1px solid rgb(195 195 195);
+    padding-left: 1.5rem;
+    padding-bottom: .5rem;
+    font-size: 1.1rem;
+}
+.card-item{
+    border: 2px solid #000000a6;
+    border-radius: 10px; 
+    height: 5rem;  
+    
+    padding: 4.5rem;
+}
+.card-item .link{
+    border-bottom: 2px solid #4a066ea6;
+    font-size: 2rem;
+    font-weight: 600; 
+    color: #4a066ea6;
+    transition: all ease .3s;
+}
+.card-item .link:hover{
+    color: #300148bf;
+    border-bottom: 2px solid  #300148bf;
+}
+.img-3{
+    height: 3rem; width: 3rem;
+}
+.font-1h{
+    font-size:1.2rem;
+}
+
+.user-station li a{
+    color:#5e5e5e;
+}
+.fa-angle-right{
+    color:#a9a8a6;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: var(--primary);

@@ -1,0 +1,47 @@
+.b-title-box{
+    padding: 1.1rem 2rem;
+    background: #fbfbfb;
+    border-bottom: 1px solid #d5dde4;
+}
+.b-title{ 
+    max-width: 100%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:#333;
+    word-wrap: break-word;
+}
+.b-info-box ul{
+    list-style: none;
+    padding: 0;
+}
+.b-info-box ul li{
+    position: relative;
+    margin: 0 ;
+    padding: 0 17px;
+    color: #5c5c5c;           
+}
+.b-info-box ul .b-writer-box::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 1px;
+    height: 13px;
+    background-color: #a9a9a9;
+}
+
+.b-content-box{
+    border-bottom: 1px solid #ccc;
+}
+        
+.notice-header {
+	background: url(resources/main/img/notice-header.png);
+	background-position: 20% 22%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.b-file-box a{
+    color:#5c5c5c;
+}

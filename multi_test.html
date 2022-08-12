@@ -309,6 +309,9 @@
                 background-size: cover;
                 height: 18rem;
             }
+            ul li{
+                display: inline-block;
+            }
         </style>
 
         <!--패키지 tab start-->
@@ -316,22 +319,32 @@
             <div class="container-fluid py-5 mb-5">
                 <div class="container py-5">
                     <!--교육 패키지 start-->
-                    <div class="row justify-content-center align-items-center h-100 mb-5 item-hover">
-                        <div class="col-1">
-                            <input type="checkbox" id="education" class="form-check-input " style="width:1.8rem; height: 1.8rem;">
-                        </div>
-                        <div class="col-11">
-                            <label class="w-100" for="education">
-                                <div class="bg-package-education py-5 px-5 text-white" style="font-size: 1.5rem;">
-                                    <h1 class="mb-3">교육</h1>
-                                    <ul>
-                                        <li>아이킨더 40차시 연간 프로그램</li>
-                                        <li>MI,CI,MOI 활동 교안 및 활동지</li>
-                                        <li>너처링 포트폴리오, 감정일기</li> 
-                                    </ul>
-                                    <p class="text-end" style="font-size:2rem;font-weight: 600;">1,000,000원</p>   
+                    <div class="row justify-content-center align-items-center h-100 mb-5 item-hover pt-4 px-3 pb-2 rounded-3" style="border: 1px solid #7a7979;">
+                        <div class="col-12">
+                            <div class="bg-package-education py-5 px-5 text-white" style="font-size: 1.5rem;">
+                                <h1 class="mb-3">교육</h1>
+                                <ul>
+                                    <li>아이킨더 40차시 연간 프로그램</li>
+                                    <li>MI,CI,MOI 활동 교안 및 활동지</li>
+                                    <li>너처링 포트폴리오, 감정일기</li> 
+                                </ul>
+                                <p class="text-end" style="font-size:2rem;font-weight: 600;">1,000,000원</p>   
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between px-3 mt-3">
+                                <div style="font-size: 1.5rem;">
+                                    <span class="me-2">가격</span>
+                                    <span class="text-danger" style="font-weight: 600;">1,000,000원</span>
                                 </div>
-                            </label>
+                                <div>
+                                    <ul style="list-style: none;">
+                                        <li><img src="img/magnifyingGlass.png" style="width: 1.7rem;"> </li>
+                                        <li>
+                                            <img src="img/cart.png" style="width: 1.8rem;">
+                                        </li>
+                                        <li><button class="btn btn-dark">구매하기</button></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>           
                     </div>
                     <!--교육 패키지 end-->
